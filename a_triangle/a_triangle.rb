@@ -1,0 +1,1 @@
+def triangle(*z) z.sum > z.max*2 end
