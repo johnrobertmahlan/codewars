@@ -3,9 +3,7 @@ def missing_no(nums)
     d << pair if pair.reduce(:-) != 1
     d
   end
+  return 0 if duo.empty? && nums.include?(100)
+  return 100 if duo.empty? && nums.include?(0)
   duo.flatten.reduce(:+) / 2
 end
-
-nums = (1..100).to_a - [5]
-
-p missing_no(nums)
